@@ -1,9 +1,11 @@
 import React from 'react';
 import { Card, CardImg, CardBody, CardTitle, CardText, CardImgOverlay, BreadcrumbItem, Breadcrumb } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import CommentForm from './CommentForm';
 
 
     function RenderDish({dish}) {
+
         return(
             <div className="col-12 col-md-5 m-1">
                 <Card>
@@ -28,10 +30,12 @@ import { Link } from 'react-router-dom';
                     </div>
                 );
             });
+
             return(
                 <div className="col-12 col-md-5 m-1">
                     <h4>Comments</h4>
                     {commentSection}
+                    <CommentForm />
                 </div>
             );
         }
