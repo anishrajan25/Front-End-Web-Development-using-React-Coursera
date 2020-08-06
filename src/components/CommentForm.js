@@ -1,4 +1,4 @@
-import React ,{Component, Fragment} from 'react';
+import React ,{Component } from 'react';
 import { Button, Row, Label, Modal, ModalHeader, ModalBody, Col } from "reactstrap";
 import { LocalForm, Control, Errors } from 'react-redux-form';
 
