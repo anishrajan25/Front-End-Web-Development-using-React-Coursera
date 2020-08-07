@@ -13,11 +13,12 @@ export const Comments = (state = {
 
         case ActionTypes.ADD_COMMENT:
             var comment = action.payload;
-            comment.id = state.comments.length;
-            comment.date = new Date().toISOString();
-            return {...state, comments: state.comment.concat(comment)};
+            return {...state, comments: state.comments.concat(comment)};
         
         default:
             return state;
     }
 }
+
+//comment will be first added on the server and when we recieve a success that the
+// comment has been added to the server only then we will add the comment to our redux store
