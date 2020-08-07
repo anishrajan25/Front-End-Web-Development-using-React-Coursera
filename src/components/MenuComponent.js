@@ -35,7 +35,7 @@ import { baseUrl } from '../shared/baseUrl';
                 </div>
             );
         }
-        else if(props.errMess) {
+        else if(props.dishes.errMess) {
             return(
                 <div className="container">
                     <div className="row">
@@ -62,6 +62,9 @@ import { baseUrl } from '../shared/baseUrl';
                     </div>
                 </div>
             );
+        }
+        else {
+            return(<div></div>);
         }
     }
 

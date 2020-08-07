@@ -26,6 +26,11 @@ const RenderCard = ({item, isLoading, errMess}) => {
             </Card>
         );
     }
+    else {
+        return(
+            <div></div>
+        );
+    }
 }
 
 //{item.designation ? <CardSubtitle>{item.designation}</CardSubtitle> : null}
@@ -45,7 +50,7 @@ function Home(props) {
                 <div className="col-12 col-md m-1">
                     <RenderCard item={props.promotion}
                         isLoading={props.promosLoading}
-                        errMess={props.promossErrMess} />
+                        errMess={props.promosErrMess} />
                 </div>
                 <div className="col-12 col-md m-1">
                     <RenderCard item={props.leader} />
